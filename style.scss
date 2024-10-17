@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+}
+header {
+  //border: solid 2px red;
+  height: 19.6vh;
+  display: flex;
+  align-items: center;
+  background-color: #ff69b4;
+  color: white;
+
+  justify-content: space-around;
+  font-size: 28px;
+  font-weight: 400;
+  .logo {
+    // border: solid 2px black;
+    display: flex;
+    align-items: center;
+  }
+  img {
+    height: 100px;
+    width: 100px;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  nav {
+    // border: solid 2px red;
+    width: 50vw;
+
+    ul {
+      //  border: solid 2px black;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      li {
+        // border: solid 2px blue;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+main {
+  .bloco2 {
+    // border: solid 2px rgb(255, 0, 13);
+    height: 62.9vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffd9ec;
+
+    p {
+      width: 587px;
+      height: 265px;
+      font-size: 25px;
+      font-weight: 400;
+      text-align: justify;
+    }
+    img {
+      width: 365px;
+      height: 355px;
+    }
+  }
+
+  .bloco3 {
+    background-color: #ff69b4;
+    //border: solid 2px rgb(84, 201, 73);
+    height: 43.7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    img {
+      width: 421px;
+      height: 234px;
+    }
+    p {
+      color: white;
+      width: 648px;
+      font-size: 25px;
+      font-weight: 400;
+      text-align: justify;
+    }
+  }
+  .bloco4 {
+    //border: solid 2px red;
+    height: 71.1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: #ffd9ec;
+
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+footer {
+  //border: solid 2px red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  ul {
+    text-align: center;
+  }
+}
