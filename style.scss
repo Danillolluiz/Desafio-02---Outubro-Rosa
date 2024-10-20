@@ -9,24 +9,38 @@
   font-family: "Noto Sans", sans-serif;
 }
 header {
-  //border: solid 2px red;
+  // border: solid 2px red;
   height: 19.6vh;
+  // width: 89vw;
   display: flex;
   align-items: center;
   background-color: #ff69b4;
   color: white;
-
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-size: 28px;
   font-weight: 400;
+  @media (max-width: 1058px) {
+    height: 22vh;
+    font-size: 15px;
+  }
   .logo {
     // border: solid 2px black;
     display: flex;
     align-items: center;
+    @media (max-width: 1058px) {
+    }
   }
+
   img {
     height: 100px;
     width: 100px;
+    @media (max-width: 1058px) {
+      height: 80px;
+      width: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
   h1 {
     font-size: 28px;
@@ -36,18 +50,35 @@ header {
   nav {
     // border: solid 2px red;
     width: 50vw;
+    @media (max-width: 1058px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      // width: 80vw;
+    }
 
     ul {
-      //  border: solid 2px black;
+      // border: solid 2px black;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @media (max-width: 1058px) {
+        margin-top: 3px;
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
 
       li {
         // border: solid 2px blue;
 
         a {
           color: white;
+        }
+        @media (max-width: 1058px) {
+          display: flex;
+          align-items: center;
         }
       }
     }
@@ -63,16 +94,32 @@ main {
     justify-content: space-around;
     background-color: #ffd9ec;
 
+    @media (max-width: 1058px) {
+      display: flex;
+      height: auto;
+      padding: 12px;
+    }
+
     p {
       width: 587px;
       height: 265px;
       font-size: 25px;
       font-weight: 400;
       text-align: justify;
+      @media (max-width: 1058px) {
+        font-size: 15px;
+        padding: 12px 12px 0 12px;
+        height: auto;
+        text-align: center;
+      }
     }
     img {
       width: 365px;
       height: 355px;
+      @media (max-width: 1058px) {
+        width: 265px;
+        height: 195px;
+      }
     }
   }
 
@@ -84,9 +131,19 @@ main {
     align-items: center;
     justify-content: space-evenly;
 
+    @media (max-width: 1058px) {
+      display: flex;
+      height: auto;
+      padding: 12px;
+    }
+
     img {
       width: 421px;
       height: 234px;
+      @media (max-width: 1058px) {
+        width: 265px;
+        height: 195px;
+      }
     }
     p {
       color: white;
@@ -94,20 +151,32 @@ main {
       font-size: 25px;
       font-weight: 400;
       text-align: justify;
+      @media (max-width: 1058px) {
+        font-size: 15px;
+        padding: 12px 12px 0 12px;
+        height: auto;
+        text-align: center;
+      }
     }
   }
   .bloco4 {
-    //border: solid 2px red;
+    border: solid 2px red;
     height: 71.1vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
-
     background-color: #ffd9ec;
+    @media (max-width: 1058px) {
+      height: 50vh;
+    }
 
     img {
-      width: 250px;
-      height: 250px;
+      width: 22vw;
+      height: 22vw;
+      @media (max-width: 1058px) {
+        width: 15vw;
+        height: 15vw;
+      }
     }
   }
 }
@@ -117,7 +186,12 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding-left: 20px;
+  background-color: #ff69b4;
+  color: white;
   ul {
     text-align: center;
+    a {
+      color: white;
+    }
   }
 }
